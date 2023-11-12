@@ -11,6 +11,8 @@ import org.springframework.context.annotation.Import;
  * 2023-11-11 - 11 - 2023
  */
 @Configuration
+@Import({MongoConfig.class})
+@ComponentScan(basePackages = "org.example.service")
 public class WebRootConfig {
     //this Config class is assigned for pojo's which is processing
     //DAOs and Business of the application
